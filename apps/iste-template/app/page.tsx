@@ -1,0 +1,10 @@
+"use client";
+import HeroSection from "@/components/ui/home/hero-section";
+
+export default function Home() {
+  return (
+    <main className="h-full w-full">
+      <HeroSection />
+    </main>
+  );
+}
