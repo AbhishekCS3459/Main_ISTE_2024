@@ -1,17 +1,16 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 
-import styles from '@/styles';
 import { fadeIn, staggerContainer, zoomIn } from '@/utils/motion';
 
 const Message = () => (
-  <section className={`${styles.paddings}`}>
+  <section className={`sm:p-16 xs:p-8 px-6 py-12`}>
     <motion.div
       variants={staggerContainer(0.1, 0.5)} 
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto`}
+      className={`lg:w-[80%] w-[100%] mx-auto`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}

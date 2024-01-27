@@ -33,7 +33,7 @@ export const navVariants: {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 0.5,
+        delay: 0,
       },
     },
   };
@@ -78,7 +78,7 @@ export const navVariants: {
       y: 0,
       transition: {
         type,
-        delay: 0.5,
+        delay: 0,
         duration: 0.5,
         ease: 'easeOut',
       },
@@ -132,7 +132,7 @@ export const navVariants: {
       opacity: 1,
       transition: {
         type: 'spring',
-        duration: 1.0,
+        duration: 0.5,
         delay,
       },
     },
@@ -170,6 +170,7 @@ export const navVariants: {
       transition: {
         type: string;
         ease: string;
+        duration: number;
       };
     };
   } = {
@@ -183,6 +184,7 @@ export const navVariants: {
       transition: {
         type: 'tween',
         ease: 'easeIn',
+        duration: 0,
       },
     },
   };
@@ -264,8 +266,8 @@ export const navVariants: {
       rotate: 0,
       transition: {
         type: 'spring',
-        duration: 1.8,
-        delay: 0.5,
+        duration: 0.5,
+        delay: 0,
       },
     },
   });
@@ -299,7 +301,7 @@ export const navVariants: {
       transition: {
         type: 'tween',
         delay,
-        duration,
+        duration:0.5,
         ease: 'easeOut',
       },
     },
@@ -340,7 +342,7 @@ export const navVariants: {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 0.5,
+        delay:0
       },
     },
   };

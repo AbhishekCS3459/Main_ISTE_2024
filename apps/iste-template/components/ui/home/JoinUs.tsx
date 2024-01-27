@@ -1,46 +1,44 @@
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 
-import styles from "@/styles";
 import { startingFeatures } from "@/consts";
 import JoinSteps from "@/components/JoinSteps";
 import TypingText from "@/components/CustomTexts";
 import { staggerContainer, fadeIn, planetVariants } from "@/utils/motion";
 export default function JoinUs() {
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className={`sm:p-16 xs:p-8 px-6 py-12 relative z-10`}>
       <motion.div
         variants={staggerContainer(0.1, 0.5)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col gap-8 lg:flex-row`}
+        className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col gap-8 lg:flex-row`}
       >
         <motion.div
           variants={planetVariants("left")}
-          className={`flex-1 ${styles.flexCenter}`}
+          className={`flex-1 flex justify-center items-center`}
         >
           <img
             src="/Iste.png"
             alt="get-started"
-            className="w-[75%] max-w-sm object-contain md:h-[75%] md:max-w-full"
+            className="w-3/5 max-w-sm object-contain md:h-[75%] md:w-full pointer-events-none"
           />
         </motion.div>
 
         <motion.div
-          variants={fadeIn("left", "tween", 0.2, 1)}
-          className="flex flex-[0.75] flex-col justify-center"
+          variants={fadeIn("left", "tween", 0.1, 1)}
+          className="flex flex-1 flex-col justify-center items-center"
         >
-          <TypingText title="| Why you should join us?" textStyles={""} />
-          <div className="mt-[31px] flex max-w-[370px] flex-col gap-[24px]">
-            {/* {startingFeatures.map((feature: string, index: number) => (
+          <TypingText title="௹ Why you should join us?" textStyles={""} />
+          <div className="mt-[31px] flex max-w-[370px] flex-col gap-4">
+            {startingFeatures.map((feature: string, index: number) => (
             <JoinSteps
               key={feature}
               number={`${index < 10 ? '0' : ''} ${index + 1}`}
               text={feature}
             />
-          ))} */}
-            something else to be placeed
+          ))}
           </div>
         </motion.div>
       </motion.div>

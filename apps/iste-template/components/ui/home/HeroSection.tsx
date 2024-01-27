@@ -1,5 +1,5 @@
+import Link from "next/link";
 import React from "react";
-
 interface HeroSectionProps {}
 
 const imagesData: string[] = [
@@ -13,10 +13,10 @@ const imagesData: string[] = [
 
 export default function HeroSection() {
   return (
-    <div className="relative h-screen">
+    <div className="relative">
       <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
-          <div className="sm:max-w-lg">
+          <div className="sm:max-w-lg my-auto">
             <h1 className="font font-annonymousPro text-4xl font-bold tracking-tight text-[#DCFFB7] sm:text-6xl">
               ISTE Chapter HIT- Join the Revolution
             </h1>
@@ -38,7 +38,7 @@ export default function HeroSection() {
                       {imagesData.slice(0, 2).map((imageUrl, index) => (
                         <div
                           key={index}
-                          className="h-64 w-44 overflow-hidden rounded-lg shadow-xl shadow-[#EBEF95] sm:opacity-0 lg:opacity-100"
+                          className="h-64 w-44 overflow-hidden rounded-lg shadow-md shadow-[#FFF8E3] sm:opacity-0 lg:opacity-100"
                         >
                           <img
                             src={imageUrl}
@@ -52,7 +52,7 @@ export default function HeroSection() {
                       {imagesData.slice(2, 5).map((imageUrl, index) => (
                         <div
                           key={index}
-                          className="h-64 w-44 overflow-hidden rounded-lg shadow-xl shadow-[#EBEF95]"
+                          className="h-64 w-44 overflow-hidden rounded-lg shadow-md shadow-[#FFF8E3]"
                         >
                           <img
                             src={imageUrl}
@@ -66,7 +66,7 @@ export default function HeroSection() {
                       {imagesData.slice(5, 7).map((imageUrl, index) => (
                         <div
                           key={index}
-                          className="h-64 w-44 overflow-hidden rounded-lg shadow-xl shadow-[#EBEF95]"
+                          className="h-64 w-44 overflow-hidden rounded-lg shadow-md shadow-[#FFF8E3]"
                         >
                           <img
                             src={imageUrl}
@@ -79,11 +79,12 @@ export default function HeroSection() {
                   </div>
                 </div>
               </div>
-
-              <button className="group relative overflow-hidden rounded-md border border-b-4 border-gray-400 bg-gray-950 px-4 py-2 font-medium text-[#FFF8E3] outline-none duration-300 hover:border-b hover:border-t-4 hover:brightness-150 active:opacity-75">
-                <span className="absolute -top-[150%] left-0 inline-flex h-[5px] w-80 rounded-md bg-gray-400 opacity-50 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)] shadow-gray-400 duration-500 group-hover:top-[150%]"></span>
-                Join Membership
-              </button>
+              <Link href="/join-membership">
+                <button className="group relative overflow-hidden rounded-md border border-b-4 border-gray-400 bg-gray-950 px-4 py-2 font-medium text-[#FFF8E3] outline-none duration-300 hover:border-b hover:border-t-4 hover:brightness-150 active:opacity-75">
+                  <span className="absolute -top-[150%] left-0 inline-flex h-[5px] w-80 rounded-md bg-gray-400 opacity-50 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)] shadow-gray-400 duration-500 group-hover:top-[150%]"></span>
+                  Join Membership
+                </button>
+              </Link>
             </div>
           </div>
         </div>

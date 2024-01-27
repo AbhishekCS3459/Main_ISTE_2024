@@ -1,19 +1,19 @@
-import React, { FC } from "react";
-import styles from "@/styles";
+import React from "react";
+import customStyles from "@/styles/customStyles";
 
 interface JoinStepsProps {
-  number: number;
+  number: string;
   text: string;
 }
 export default function JoinSteps({ number, text }: JoinStepsProps) {
   return (
-    <div className={`${styles.flexCenter} flex-row`}>
+    <div className={`${customStyles.flexCenter} flex-row`}>
       <div
-        className={`${styles.flexCenter} h-[70px] w-[70px] rounded-full bg-[#323F5D] hover:bg-lime-400`}
+        className={`${customStyles.flexCenter} h-[60px] w-[60px] claymorphism hover:bg-slate-800`}
       >
-        <p className="text-[20px] font-bold text-white">{number}</p>
+        <p className="text-[16px] font-bold text-gray-400 pointer-events-none">{number}</p>
       </div>
-      <p className="ml-[30px] flex-1 text-[18px] font-normal leading-[32.4px] text-[#B0B0B0]">
+      <p className="ml-[30px] flex-1 text-[18px] leading-[24px] text-[#B0B0B0]">
         {text}
       </p>
     </div>

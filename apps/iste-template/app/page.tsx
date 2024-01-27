@@ -1,10 +1,26 @@
 "use client";
-import HeroSection from "@/components/ui/home/hero-section";
+import {HeroSection,About,JoinUs,RecentEvent,Explore,Message} from "@/components/ui/home";
 
-export default function Home() {
+export default function Hero() {
   return (
-    <main className="h-full w-full">
-      <HeroSection />
-    </main>
+    <div className="mt-12 md:mt-2 h-full">
+      <div>
+        <HeroSection/>
+      </div>
+      <div className="relative mt-[500px]">
+        <About />
+        <div className="gradient-03 z-0" />
+        <JoinUs />
+      </div>
+      <div className="relative">
+        <RecentEvent />
+        <div className="gradient-04 z-0" />
+      </div>
+      <div className="relative">
+        <Explore />
+        <div className="gradient-04 z-0" />
+        <Message />
+      </div>
+    </div>
   );
 }

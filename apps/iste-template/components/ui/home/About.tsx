@@ -1,28 +1,26 @@
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 import TypingText from "@/components/CustomTexts";
-
-import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
 interface AboutProps {}
 
 export default function About() {
   return (
-    <section className={`${styles.paddings} relative z-10 container`}>
+    <section className={`sm:p-16 xs:p-8 px-6 py-12 relative z-10 container`}>
       <div className="gradient-02 z-0" />
       <motion.div
         variants={staggerContainer(0.1, 0.5)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+        className={`lg:w-[80%] w-[100%] mx-auto flex justify-center items-center flex-col`}
       >
-        <TypingText title="| About ISTE" textStyles="text-center" />
+        <TypingText title="௹ About ISTE" textStyles="text-center" />
 
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-secondary-white mt-[8px] text-center text-[20px] font-normal sm:text-[32px]"
+          className="text-secondary-white my-[16px] text-center text-[16px] font-light sm:text-[24px]"
         >
           The ISTE Student Chapter at Haldia Institute of Technology is your
           gateway to a world of innovation in education technology. As a part of
