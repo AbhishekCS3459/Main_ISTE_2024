@@ -19,6 +19,45 @@ body {
   background-color: black;
   opacity: 1;
 }
+body,
+* {
+  cursor: none;
+}
+.flare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff2b;
+  border-radius: 0% 100% 50% 50% / 0% 50% 50% 100% ;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important;
+  backdrop-filter: blur(1px);
+  background-color: white;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    display: none;
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.flare.pointer {
+  display: none;
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
 .active {
   background-color: rgb(209, 214, 162);
 }

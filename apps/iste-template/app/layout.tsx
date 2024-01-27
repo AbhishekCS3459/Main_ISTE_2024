@@ -5,7 +5,7 @@ import { auth } from "@/auth";
 import "./globals.css";
 import Navbar from "@/components/ui/header/navbar";
 import Footer from "@/components/ui/footer/footer";
-
+import FlareCursor from "@/components/flare-cursor";
 
 export const metadata: Metadata = {
   title: "ISTE HIT",
@@ -24,6 +24,7 @@ export default async function RootLayout({
       <html lang="en">
         <body>
           <div className="overflow-x-hidden overflow-y-hidden">
+            <FlareCursor/>
             <Navbar />
             <div className=" relative z-0 overflow-x-hidden overflow-y-hidden h-full pattern text-white">
               {children}
