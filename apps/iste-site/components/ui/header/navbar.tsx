@@ -73,6 +73,7 @@ const Navbar: React.FC = () => {
               { path: "/events", label: "EVENTS" },
               { path: "/blogs", label: "BLOGS" },
               { path: "/memories", label: "MEMORIES" },
+        
             ].map((item, index) => (
               <li key={index}>
                 <div

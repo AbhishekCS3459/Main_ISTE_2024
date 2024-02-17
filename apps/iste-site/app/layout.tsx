@@ -24,7 +24,7 @@ export default async function RootLayout({
       <html lang="en">
         <body>
           <div className="overflow-x-hidden overflow-y-hidden">
-            <FlareCursor />
+            {/* <FlareCursor /> */}
             <Navbar />
             <div className=" relative z-0 overflow-x-hidden overflow-y-hidden h-full pattern text-white">
               {children}

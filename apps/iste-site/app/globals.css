@@ -19,9 +19,11 @@ body {
   background-color: black;
   opacity: 1;
 }
+
+
 body,
 * {
-  cursor: none;
+  cursor: auto;
 }
 .flare {
   position: fixed;
