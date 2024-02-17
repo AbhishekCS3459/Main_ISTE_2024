@@ -13,7 +13,6 @@ async function Enable2FAuth(req: Express.Request, res: Express.Response) {
   }
 }
 
-
 function Disable2FAuth(req: Express.Request, res: Express.Response) {
   res.send(TWO_FACTOR.disable2FA());
 }

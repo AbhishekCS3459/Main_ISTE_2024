@@ -30,7 +30,7 @@ export default class TwoFactor {
     return JSON.stringify(
       speakeasy.generateSecret({
         name: this.APP_NAME,
-      })
+      }),
     );
   }
 
@@ -61,7 +61,7 @@ export default class TwoFactor {
       "2FA_Verification",
       verificationResult.toString(),
       30 * 24 * 60 * 60,
-      path
+      path,
     );
     return verificationResult;
   }
