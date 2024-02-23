@@ -75,39 +75,32 @@ export default function Home() {
 
 const sliderData = [
   {
-    img: "https://a.storyblok.com/f/188325/1920x1280/41e681c422/alexandre-pellaes-6vajp0pscx0-unsplash-1-1.jpg",
-    location: "CSE CS Department",
+    img: "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708694408/WhatsApp_Image_2024-02-23_at_18.47.38_034a1c5d_l5rf8s.jpg",
+    location: "CS Department",
     description:
-      "Explore the latest advancements in technology at Tech Summit 2024! Join industry leaders, experts, and innovators for a three-day event packed with keynote sessions, workshops, and networking opportunities.",
-    title: "Tech Summit 2024",
+      "Are you ready to advance your hacking skills and start on an exciting cybersecurity adventure? Our Capture the Flag (CTF) events and Advanced Ethical Hacking Workshop are the only places to look! ",
+    title: "CodeVault",
   },
   {
-    img: "https://blog.hyperiondev.com/wp-content/uploads/2019/02/Blog-Tech-Events.jpg",
-    title: "Innovation Expo: Future Tech Edition",
+    img: "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708693635/IMG_20231101_185655_pwdjnf.jpg",
+    title: "Access Denied",
     description:
-      "The Innovation Expo brings together startups and established tech companies to showcase groundbreaking solutions shaping the future. Don't miss the chance to witness demos, engage with entrepreneurs, and discover the next big thing!",
-    location: "CSE AIML Department",
+      "Team ISTE recently had the privilege of conducting a workshop from November 1st to November 3rd that left an indelible mark on both Instructors and Attendees alike",
+    location: "CS Lab 2nd Floor",
   },
   {
-    img: "https://socio.events/wp-content/uploads/2022/03/AdobeStock_213888630.jpeg",
-    title: "AI Revolution Conference",
+    img: "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708694970/390957785_1005229477413655_3343713001902293170_n_evct4x.jpg",
+    title: "Quest for Enigma",
     description:
-      "Dive deep into the world of artificial intelligence at the AI Revolution Conference. Learn about the latest AI trends, ethical considerations, and real-world applications from leading researchers, engineers, and industry pioneers.",
-    location: "Aryabhatt Hall",
+      'Team ISTE is thrilled to announce the tremendous success of the free quiz event "Quest For Enigma," which took place from October 11th to 12th. ',
+    location: "Cryptography Lab",
   },
   {
-    img: "https://cdn.evbstatic.com/s3-build/fe/build/images/1d87d01c25d690d5564dd4184cd39f8e-science.webp",
-    title: "Cybersecurity Symposium 2024",
+    img: "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708695128/Screenshot_2024-02-23_190129_noofbb.png",
+    title: "Bit N Bytes",
     description:
-      " As cyber threats evolve, the Cybersecurity Symposium 2024 gathers experts to discuss strategies, tools, and best practices for safeguarding digital assets. Stay ahead of cyber challenges and network with top security professionals.",
-    location: "Central Hall Haldia",
-  },
-  {
-    img: "https://dcljbbc0bv6lw.cloudfront.net/wp-content/uploads/2018/02/photo-1504384764586-bb4cdc1707b0.jpg",
-    title: "Blockchain Innovation Forum",
-    description:
-      "Uncover the potential of blockchain technology at the Blockchain Innovation Forum. Explore use cases, industry applications, and the future of decentralized systems with thought leaders and blockchain enthusiasts.",
-    location: "Datascience Hall",
+      'Indian Society for Technical Education (HIT Students Chapter) presents "BIT N BYTES" for all the coding enthusiasts. The two day competition is open to everyone.',
+    location: "Cryptography Lab",
   },
 ];
 

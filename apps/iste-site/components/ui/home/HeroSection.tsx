@@ -3,12 +3,12 @@ import React from "react";
 interface HeroSectionProps {}
 
 const imagesData: string[] = [
-  "https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg",
-  "https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg",
-  "https://cdn.pixabay.com/photo/2014/07/10/17/18/battleship-389274_1280.jpg",
+  "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708692427/IMG_20231101_181124_tmfwrf.jpg",
+  "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708693635/IMG_20231101_185655_pwdjnf.jpg",
+  "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708695287/abhishek_h1mqty.png",
   "https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg",
   "https://cdn.pixabay.com/photo/2023/04/03/19/37/soldering-7897827_1280.jpg",
-  "https://cdn.pixabay.com/photo/2017/12/10/17/00/robot-3010309_1280.jpg",
+  "https://res.cloudinary.com/ds4lbluhe/image/upload/v1708694086/20240221155657_IMG_9196_axocqw.jpg",
 ];
 
 export default function HeroSection() {
