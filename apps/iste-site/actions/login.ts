@@ -96,7 +96,7 @@ export const login = async (
     await signIn("credentials", {
       email,
       password,
-      redirectTo: callbackUrl || DEFAULT_LOGIN_REDIRECT,
+      redirectTo: DEFAULT_LOGIN_REDIRECT||callbackUrl,
     });
   } catch (error) {
     if (error instanceof AuthError) {
